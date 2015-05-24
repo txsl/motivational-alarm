@@ -16,5 +16,5 @@ time_remaining_str = "%i days and %i hours remaining. %s" % (time_remaining.days
 ts = gTTS(text=time_remaining_str, lang='en')
 ts.save('time_remaining.mp3')
 
-subprocess.call(['cvlc', '--play-and-exit', '--volume 500', 'time_remaining.mp3'])
+subprocess.call(['cvlc', '--play-and-exit', '--volume', '500', 'time_remaining.mp3'])
 
